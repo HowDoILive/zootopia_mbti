@@ -111,17 +111,33 @@ export default function ResultCard({ mbti, result, onRestart }) {
             {description}
           </motion.p>
 
-          <motion.button
-            onClick={onRestart}
-            className="mt-8 w-full py-4 rounded-xl bg-gradient-to-r from-zootopia-yellow to-zootopia-green text-zootopia-brown font-bold shadow-lg hover:shadow-xl transition-all duration-200"
-            whileHover={{ scale: 1.02 }}
-            whileTap={{ scale: 0.98 }}
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.6 }}
-          >
-            다시 하기
-          </motion.button>
+          <div className="mt-8 space-y-3">
+            <motion.a
+              href="https://forms.gle/PF3mNsGMJwUZWLW39"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block w-full py-4 rounded-xl bg-gradient-to-r from-zootopia-green to-zootopia-yellow text-zootopia-brown font-bold text-base shadow-lg hover:shadow-xl transition-all duration-200 text-center"
+              whileHover={{ scale: 1.02 }}
+              whileTap={{ scale: 0.98 }}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.6 }}
+            >
+              키비탄 가입 신청하기❤️
+            </motion.a>
+
+            <motion.button
+              onClick={onRestart}
+              className="w-full py-3 rounded-lg border border-zootopia-green/40 bg-white text-zootopia-green font-semibold text-sm hover:bg-zootopia-yellowLight/60 transition-all duration-200"
+              whileHover={{ scale: 1.01 }}
+              whileTap={{ scale: 0.98 }}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.7 }}
+            >
+              다시 하기
+            </motion.button>
+          </div>
         </div>
       </div>
     </motion.div>
