@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css');
+
+:root {
+  --zootopia-yellow: #FFD93D;
+  --zootopia-yellowLight: #FFF9E6;
+  --zootopia-yellowDark: #E6B800;
+  --zootopia-green: #2D5A27;
+  --zootopia-greenLight: #4A7C43;
+  --zootopia-greenDark: #1E3D1A;
+  --zootopia-cream: #FFFDE7;
+  --zootopia-brown: #3D2C1E;
+}
+
+body {
+  font-family: 'Pretendard', system-ui, sans-serif;
+  background: linear-gradient(135deg, #FFFDE7 0%, #FFF9E6 30%, #E8F5E0 70%, #D4EDDA 100%);
+  min-height: 100vh;
+}
